@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="appendToDisplay('(')" style="color: #1976d2;"><b>(</b></button>
+            <button onclick="appendToDisplay(')')" style="color: #1976d2;"><b>)</b></button>
+            <button onclick="appendToDisplay('ans')" style="color: #1976d2;"><b>ans</b></button>
+            <button onclick="deleteLast()" style="color: #1976d2;"><b>del</b></button>
+            <button onclick="clearDisplay()" style="color: #1976d2;"><b>clear</b></button>
+            <button onclick="appendToDisplay('7')" style="background-color: #BBDEFB;"><b>7</b></button>
+            <button onclick="appendToDisplay('8')" style="background-color: #BBDEFB;"><b>8</b></button>
+            <button onclick="appendToDisplay('9')" style="background-color: #BBDEFB;"><b>9</b></button>
+            <button onclick="appendToDisplay('%')" style="color: #1976d2;"><b>%</b></button>
+            <button onclick="appendToDisplay('√')" style="color: #1976d2;"><b>√</b></button>
+            <button onclick="appendToDisplay('4')" style="background-color: #BBDEFB;"><b>4</b></button>
+            <button onclick="appendToDisplay('5')" style="background-color: #BBDEFB;"><b>5</b></button>
+            <button onclick="appendToDisplay('6')" style="background-color: #BBDEFB;"><b>6</b></button>
+            <button onclick="appendToDisplay('*')" style="color: #1976d2;"><b>x</b></button>
+            <button onclick="appendToDisplay('/')" style="color: #1976d2;"><b>÷</b></button>
+            <button onclick="appendToDisplay('1')" style="background-color: #BBDEFB;"><b>1</b></button>
+            <button onclick="appendToDisplay('2')" style="background-color: #BBDEFB;"><b>2</b></button>
+            <button onclick="appendToDisplay('3')" style="background-color: #BBDEFB;"><b>3</b></button>
+            <button onclick="appendToDisplay('+')" style="color: #1976d2;"><b>+</b></button>
+            <button onclick="appendToDisplay('-')" style="color: #1976d2;"><b>-</b></button>
+            <button onclick="appendToDisplay('.')" style="color: #1976d2;"><b>.</b></button>
+            <button onclick="appendToDisplay('0')" style="background-color: #BBDEFB;"><b>0</b></button>
+            <button onclick="toggleSign()" style="color: #1976d2;"><b>±</b></button>
+            <button onclick="calculate()" class="enter" style="color: white;"><b>ENTER</b></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
